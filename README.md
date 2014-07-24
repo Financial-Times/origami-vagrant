@@ -1,7 +1,6 @@
 Create a run time environment for developing and using Origami in a VM.
 
-Usage
-=====
+### Usage
 
 You'll need [Virtualbox](https://www.virtualbox.org/) and [Vagrant](http://www.vagrantup.com/), then ...
 
