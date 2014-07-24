@@ -8,3 +8,15 @@ You'll need [Virtualbox](https://www.virtualbox.org/) and [Vagrant](http://www.v
 git clone https://github.com/Financial-Times/origami-vagrant.git && cd origami-vagrant
 vagrant up
 ```
+
+If that's all worked successfully you can do
+
+```
+vagrant ssh
+```
+
+Then run,
+
+```
+bower install o-grid
+```
