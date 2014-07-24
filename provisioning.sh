@@ -1,7 +1,7 @@
 
     sudo su -
 
-    yum -y --verbose --noplugins install ruby wget
+    yum -y --verbose --noplugins install ruby wget git
 
 # gems
 
@@ -9,9 +9,13 @@
     tar -xzvf rubygems-2.4.1.tgz
     cd ./rubygems-2.4.1 && ruby setup.rb
 
+# fixes CentOS rdoc problem
+
+    yum -y --verbose --noplugins install ruby-rdoc
+
 # sass
 
-    gem --no-ri --no-rdoc install sass
+    sudo gem --no-rdoc install sass
 
 # node.js
 
@@ -19,7 +23,12 @@
     rpm -Uvh http://download-i2.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
     yum -y --verbose --noplugins install node npm --enablerepo=epel
 
-# modules
+# NPM modules
 
     npm install -g bower grunt
 
+# Make sure things are installed 
+
+    ruby -v && node -v && sass -v && npm -v && bower -v
+
+    echo "DONE"
