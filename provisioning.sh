@@ -15,7 +15,7 @@
 
 # sass
 
-    sudo gem --no-rdoc install sass
+    sudo gem install sass
 
 # node.js
 
